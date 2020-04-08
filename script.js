@@ -73,6 +73,19 @@ $("button").click(function() {
   $(this).slideDown(100);
 });
 
+//Removes items added to list when clicked
+$(document).ready(function(){
+  $("div").on("click", "li", function(){
+    $(this).remove();
+  });
+
+//adds new list items to list
+  $("button").click(function(){
+    $("userInput").insertAfter("button");
+  });
+});
+
+
 
 /*
 //Makes content in page move around and shrink and fade.. (can't figure out how to return to normal form)
