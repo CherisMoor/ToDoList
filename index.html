@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>To-Do List</title>
+    
+</head>
+
+<body style="background-color: black;">
+
+    <div class="row m-5 text-center" style="border-style: dotted; border-color: hotpink; border-width: 10px;">
+        <div class="cardBox m-3 p-3">
+            <h1 class="m-4 p-4" style="color:hotpink; font-size: 60px; font-family:monospace; text-align: left;">To-Do List</h1>
+
+            <ul id="todoList" class="m-6 p-4 text-left" style="color:pink; font-size: 35px;">
+                <li class="list-item">
+                    <span>Grocery Shopping</span>
+                </li>
+                <li class="list-item">
+                    <span>Wash Dishes</span>
+                </li>
+                <li class="list-item">
+                    <span>Call Mom</span>
+                </li>
+            </ul>
+
+            <div class=" row mb-4 align-items-center">
+                <div class="col-5">
+                    <label class="userInput" for="userInput" style="color: purple; font-size: 20px; font-weight: bold;">Type new to-do item:</label>
+                </div>
+                <div class="col-4">
+                    <input style="border-color: hotpink; border-style: dotted; border-width: 5px; border-spacing: 1px;" class="form-control m-4 p-2" type="text" name="userInput" id="userInput" placeholder="New Item...">
+                </div>
+                <div class="col-3">
+                    <button style="background-color:pink; border-color: purple;" id="addButton">Add Item</button>
+                </div>
+            </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
